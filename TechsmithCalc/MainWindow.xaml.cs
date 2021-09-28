@@ -22,6 +22,7 @@ namespace TechsmithCalc
     {
         public MainWindow()
         {
+            //This is where the button magic happens
             InitializeComponent();
             Button1.Click += delegate(object sender, RoutedEventArgs e) { Button_Click(sender, e, '1'); };
             Button2.Click += delegate(object sender, RoutedEventArgs e) { Button_Click(sender, e, '2'); };
@@ -64,8 +65,6 @@ namespace TechsmithCalc
             }
             
         }
-
-
 
         //make sure you check whether there's too much in the box.
         private void Calculate(object sender, RoutedEventArgs e)
