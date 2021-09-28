@@ -1,0 +1,204 @@
+﻿<Window x:Class="TechsmithCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechsmithCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="539" Background="#FFAE9595" BorderBrush="Black">
+    <Grid Background="#FFA69696">
+        <StackPanel x:Name="TextBoxHolder"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    Height="430"
+                    Grid.Row="0">
+
+            <TextBox x:Name="EquationBox"
+                         Text="0"
+                         Width="480"
+                         Height="60"
+                         FontSize="48"
+                         TextAlignment="Right"
+                         MaxLength="24"
+                         Margin="0,20,0,0"
+                         TextChanged="EquationBox_TextChanged"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button x:Name="Button1"
+                        Content="1"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Left"
+                        Margin="0,20,0,20"/>
+                <Button x:Name="Button2"
+                        Content="2"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Center"
+                        Margin="0,20,0,20"
+                        Grid.Column="1"/>
+                <Button x:Name="Button3"
+                    Content="3"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Right"
+                        Margin="0,20,0,20"
+                        Grid.Column="2"/>
+                <Button x:Name="ButtonDiv"
+                        Content="/"
+                        FontSize="25"
+                        Width="120"
+                        Height="40"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="10,20,0,0"
+                        Grid.Column="3"/>
+                <Button x:Name="ButtonX"
+                        Content="X"
+                        FontSize="25"
+                        Width="120"
+                        Height="40"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
+                        Grid.Column="3"/>
+                <Button x:Name="Button4"
+                    Content="4"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Left"
+                        Margin="0,0,0,20"
+                        Grid.Row="1"/>
+                <Button x:Name="Button5"
+                    Content="5"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,20"
+                        Grid.Row="1"
+                        Grid.Column="1"/>
+                <Button x:Name="Button6"
+                    Content="6"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,0,20"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        />
+                <Button x:Name="Button7"
+                    Content="7"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Left"
+                        Margin="0,0,0,20"
+                        Grid.Row="2"
+                        />
+                <Button x:Name="Button8"
+                    Content="8"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,20"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        
+                        />
+                <Button x:Name="Button9"
+                    Content="9"
+                        FontSize="40"
+                        Width="120"
+                        Height="60"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,0,20"
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        
+                        />
+                <Button x:Name="Button0"
+                    Content="0"
+                        Width="120"
+                        Height="60"
+                        FontSize="40"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,20"
+                        Grid.Row="3"
+                        />
+                <Button  x:Name="ButtonDot"
+                   Content="."
+                        Width="120"
+                        Height="60"
+                        FontSize="40"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,20"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                       />
+                <Button x:Name="ButtonEq"
+                    Content="="
+                        Width="120"
+                        Height="60"
+                        FontSize="20"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,0,20"
+                        Grid.Row="3"
+                        Grid.Column="2"
+                        />
+                <Button x:Name="ButtonPlus"
+                    Content="+"
+                    FontSize="25"
+                    Width="120"
+                    Height="40"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Grid.Column="3" Margin="10,0,0,0" Grid.Row="1"/>
+                <Button x:Name="ButtonMinus"
+                    Content="-"
+                    FontSize="25"
+                    Width="120"
+                    Height="40"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Grid.Column="3" Margin="10,40,0,0" Grid.Row="1"/>
+                <Button x:Name="ButtonExpo"
+                    Content="^"
+                    FontSize="25"
+                    Width="120"
+                    Height="40"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Grid.Column="3" Margin="10,0,0,0" Grid.Row="2"/>
+                <Button x:Name="ButtonDEL"
+                    Content="DEL"
+                    FontSize="25"
+                    Width="120"
+                    Height="40"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Grid.Column="3" Margin="10,40,0,0" Grid.Row="2"/>
+
+            </Grid>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
