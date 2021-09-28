@@ -78,7 +78,9 @@ namespace TechsmithCalc
             }
             catch(Exception exc)
             {
-                throw new ArgumentException("There's something wrong with the given numbers, likely the order given or the format written."+exc);
+                MessageBox.Show("Invalid Input.");
+                EquationBox.Text = "";
+                return;
             }
             
 
